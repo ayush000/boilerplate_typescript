@@ -14,8 +14,7 @@
     "source-map-loader": "^0.1.5"
   },
   "scripts": {
-    "start": "tsc && node lib/server/index.js",
-    "dev": "tsc --watch --jsx react -m system --outFile ./dist/bundle.js ./src/client/index.tsx"
+    "start": "tsc && webpack && node lib/server/index.js"
   },
   "devDependencies": {
     "eslint": "^3.12.2",
